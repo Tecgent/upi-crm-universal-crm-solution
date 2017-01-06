@@ -20,21 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="upicrm_admin_lists.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="upicrm_admin_lists.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/upicrm_admin_lists.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="14144">
               <caret line="832" column="50" selection-start-line="832" selection-start-column="50" selection-end-line="832" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upicrm_settings.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/upicrm_settings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="209" column="22" selection-start-line="209" selection-start-column="22" selection-end-line="209" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -160,15 +150,15 @@
       <option name="presentableId" value="Default" />
       <updated>1483707488549</updated>
       <workItem from="1483707579499" duration="1541000" />
-      <workItem from="1483711614157" duration="2781000" />
+      <workItem from="1483711614157" duration="3223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4322000" />
+    <option name="totallyTimeSpent" value="4764000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
+    <frame x="-8" y="-8" width="1378" height="754" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18512899" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -206,10 +196,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/upicrm_admin_lists.php">
+    <entry file="file://$PROJECT_DIR$/admin/upicrm_settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="832" column="50" selection-start-line="832" selection-start-column="50" selection-end-line="832" selection-end-column="50" />
+        <state relative-caret-position="321">
+          <caret line="209" column="22" selection-start-line="209" selection-start-column="22" selection-end-line="209" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -222,10 +212,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/upicrm_settings.php">
+    <entry file="file://$PROJECT_DIR$/admin/upicrm_admin_lists.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="209" column="22" selection-start-line="209" selection-start-column="22" selection-end-line="209" selection-end-column="22" />
+        <state relative-caret-position="14144">
+          <caret line="832" column="50" selection-start-line="832" selection-start-column="50" selection-end-line="832" selection-end-column="50" />
           <folding />
         </state>
       </provider>

@@ -1,24 +1,24 @@
 <?php
 if ( !class_exists('UpiCRMAdminSettings') ):
-    class UpiCRMAdminSettings{
-        public function Render() {
-            global $SourceTypeID;
-            $UpiCRMgform = new UpiCRMgform();
-            $UpiCRMwpcf7 = new UpiCRMwpcf7(); 
-            $UpiCRMninja = new UpiCRMninja(); 
-            $UpiCRMcaldera = new UpiCRMcaldera();
-            $UpiCRMFields = new UpiCRMFields();
-            $UpiCRMLeadsStatus = new UpiCRMLeadsStatus();
-            
-            switch ($_POST['action']) {
-                case 'save_field':
-                    $this->saveField();
-                    $msg = __('changes saved successfully','upicrm');
-                break;
-                case 'save_status':
-                    $this->saveStatus();
-                    $msg = __('changes saved successfully','upicrm');
-                break;
+	class UpiCRMAdminSettings{
+		public function Render() {
+			global $SourceTypeID;
+			$UpiCRMgform = new UpiCRMgform();
+			$UpiCRMwpcf7 = new UpiCRMwpcf7();
+			$UpiCRMninja = new UpiCRMninja();
+			$UpiCRMcaldera = new UpiCRMcaldera();
+			$UpiCRMFields = new UpiCRMFields();
+			$UpiCRMLeadsStatus = new UpiCRMLeadsStatus();
+
+			switch ($_POST['action']) {
+				case 'save_field':
+					$this->saveField();
+					$msg = __('changes saved successfully','upicrm');
+				break;
+				case 'save_status':
+					$this->saveStatus();
+					$msg = __('changes saved successfully','upicrm');
+				break;
 		case 'delete_upi_settings':
 			if(isset($_POST['delete_upi']) && $_POST['delete_upi'] == 1) {
 				upicrm_remove_plugin_data();
