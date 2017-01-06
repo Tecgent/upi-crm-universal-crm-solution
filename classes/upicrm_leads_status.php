@@ -36,6 +36,11 @@ class UpiCRMLeadsStatus extends WP_Widget {
         //update field
         $this->wpdb->update(upicrm_db()."leads_status", $updateArr , array("lead_status_id" => $lead_status_id));
     }
+
+    function delete_a_status($id){
+        //delete a status by id
+        return( $this->wpdb->delete( upicrm_db()."leads_status", array("lead_status_id" => $id), null ) ) ? true : false;
+    }
     
     function is_exists($lead_status_name) {
         //checks if the field is already existing 

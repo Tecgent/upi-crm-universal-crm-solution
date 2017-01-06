@@ -20,11 +20,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="upicrm_admin_lists.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upicrm_admin_lists.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/upicrm_admin_lists.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="832" column="50" selection-start-line="832" selection-start-column="50" selection-end-line="832" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upicrm_settings.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/upicrm_settings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="209" column="22" selection-start-line="209" selection-start-column="22" selection-end-line="209" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upicrm_leads_status.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/upicrm_leads_status.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="41" column="115" selection-start-line="41" selection-start-column="115" selection-end-line="41" selection-end-column="115" />
               <folding />
             </state>
           </provider>
@@ -39,6 +59,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/admin/upicrm_admin_lists.php" />
+        <option value="$PROJECT_DIR$/classes/upicrm_leads_status.php" />
+        <option value="$PROJECT_DIR$/admin/upicrm_settings.php" />
       </list>
     </option>
   </component>
@@ -113,7 +135,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -138,12 +160,12 @@
       <option name="presentableId" value="Default" />
       <updated>1483707488549</updated>
       <workItem from="1483707579499" duration="1541000" />
-      <workItem from="1483711614157" duration="1551000" />
+      <workItem from="1483711614157" duration="2781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3092000" />
+    <option name="totallyTimeSpent" value="4322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
@@ -188,6 +210,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="832" column="50" selection-start-line="832" selection-start-column="50" selection-end-line="832" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/upicrm_leads_status.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="41" column="115" selection-start-line="41" selection-start-column="115" selection-end-line="41" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/upicrm_settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="209" column="22" selection-start-line="209" selection-start-column="22" selection-end-line="209" selection-end-column="22" />
           <folding />
         </state>
       </provider>
