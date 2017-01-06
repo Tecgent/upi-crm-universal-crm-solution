@@ -367,22 +367,15 @@ public function RenderLists() {
             column.visible(false);
             var column = otable.column(0);
             column.visible(true);
-            
-            if (upicrm_get_cookie('upicrm_lead_table_fields') != "") {
-                var show_option = JSON.parse(upicrm_get_cookie('upicrm_lead_table_fields'));
-            } else {
-                var show_option = [
-                    "content[1]", 
-                    "content[2]",
-                    "content[8]",
-                    "special[user_id]", 
-                    "leads[time]", 
-                    "leads[lead_id]",
-                    "special[actions]",
-                    "special[lead_management_comment]",
-                    "special[lead_status_id]"
-                ]; 
+            <?php
+            $lead_table_fields = get_option('lead_table_fields');
+
+            if($lead_table_fields == false ){
+                add_option( 'lead_table_fields', '[ "content[1]", "content[2]", "content[8]", "special[user_id]", "leads[time]", "leads[lead_id]", "special[actions]", "special[lead_management_comment]", "special[lead_status_id]" ]' );
+                $lead_table_fields = get_option('lead_table_fields');
             }
+            echo "var show_option = JSON.parse('" . $lead_table_fields  . "');\n";
+            ?>
             show_option.forEach(function(entry) {
                  $j("#ChooseInputs option[value='"+entry+"']").prop('selected', true);
                  var i = $("#ChooseInputs option[value='"+entry+"']").index() + 1;
@@ -413,6 +406,13 @@ public function RenderLists() {
                     });
                     //$j("#LeadTable .checklead").show();
                     upicrm_set_cookie('upicrm_lead_table_fields', JSON.stringify(remember_me),30);
+                    jQuery.post(
+                        ajaxurl, {
+                            'action': 'upicrm_lead_table_fields',
+                            'setting': upicrm_get_cookie('upicrm_lead_table_fields')
+                        },
+                        function(response) {}
+                    );
                 }
             });
             
@@ -828,6 +828,10 @@ add_action( 'wp_ajax_save_lead_status_arr', array(new UpiCRMAdminAdminLists,'wp_
 add_action( 'wp_ajax_request_status', array(new UpiCRMAdminAdminLists,'wp_ajax_request_status_callback'));
 add_action( 'wp_ajax_send_lead_again_to_master', array(new UpiCRMAdminAdminLists,'wp_ajax_send_lead_again_to_master_callback'));
 add_action( 'wp_ajax_send_webservice', array(new UpiCRMAdminAdminLists,'wp_ajax_send_webservice_callback'));
-
+add_action( 'wp_ajax_upicrm_lead_table_fields', function(){
+    $string = $_POST['setting'];
+    update_option( 'lead_table_fields', $string );
+    die();
+});
 
 endif;
